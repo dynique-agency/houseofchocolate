@@ -6,18 +6,21 @@
     "dev": "next dev -p 4197",
     "build": "next build",
     "start": "next start -p 4197",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cf:build": "npx @cloudflare/next-on-pages@latest"
   },
   "dependencies": {
-    "next": "14.0.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next": "15.1.2",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.16",
     "@types/node": "20.10.5",
-    "@types/react": "18.2.45",
-    "@types/react-dom": "18.2.18",
-    "typescript": "5.3.3"
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.1",
+    "typescript": "5.3.3",
+    "wrangler": "^3.98.0"
   }
 }
 
