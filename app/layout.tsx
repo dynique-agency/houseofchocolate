@@ -4,6 +4,10 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'House of Chocolate - Luxe Oreo Truffels op Aanvraag',
   description: 'Premium handgemaakte chocolade Oreo truffels, speciaal voor u gemaakt',
+  icons: {
+    icon: '/img/house.png',
+    apple: '/img/house.png',
+  },
 }
 
 export default function RootLayout({
