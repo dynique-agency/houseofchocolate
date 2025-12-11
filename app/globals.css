@@ -223,6 +223,14 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(212, 175, 55, 0.3);
 }
 
+.language-switch.desktop {
+  display: flex;
+}
+
+.language-switch.mobile {
+  display: none;
+}
+
 .lang-btn {
   background: none;
   border: none;
@@ -1145,13 +1153,26 @@ video.hero-image {
     display: none;
   }
 
-  .language-switch {
-    padding: 0.4rem 0.8rem;
+  .language-switch.desktop {
+    display: none;
+  }
+
+  .language-switch.mobile {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0.8rem;
+  }
+
+  .mobile-lang-switch {
+    width: 100%;
+    margin-top: 0.5rem;
   }
 
   .lang-btn {
-    font-size: 0.8rem;
-    padding: 0.2rem 0.4rem;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
   }
 
   .logo-text::before {

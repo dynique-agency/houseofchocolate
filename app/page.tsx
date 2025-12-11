@@ -98,9 +98,26 @@ export default function Home() {
               <li><a href="#home" onClick={() => setMobileMenuOpen(false)}>{t.nav.home}</a></li>
               <li><a href="#about" onClick={() => setMobileMenuOpen(false)}>{t.nav.about}</a></li>
               <li><a href="#request" onClick={() => setMobileMenuOpen(false)}>{t.nav.request}</a></li>
+              <li className="mobile-lang-switch">
+                <div className="language-switch mobile">
+                  <button 
+                    className={`lang-btn ${language === 'nl' ? 'active' : ''}`}
+                    onClick={() => setLanguage('nl')}
+                  >
+                    NL
+                  </button>
+                  <span className="lang-divider">|</span>
+                  <button 
+                    className={`lang-btn ${language === 'de' ? 'active' : ''}`}
+                    onClick={() => setLanguage('de')}
+                  >
+                    DE
+                  </button>
+                </div>
+              </li>
             </ul>
 
-            <div className="language-switch">
+            <div className="language-switch desktop">
               <button 
                 className={`lang-btn ${language === 'nl' ? 'active' : ''}`}
                 onClick={() => setLanguage('nl')}
